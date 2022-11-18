@@ -39,13 +39,13 @@ contract Calculator {
         if(_symbol == symb('+')){
              z = add(x, y);
         }
-        if(_symbol == symb('-')){
+       else if(_symbol == symb('-')){
              z = sub(x, y);
         }
-        if(_symbol == symb('*')){
+      else  if(_symbol == symb('*')){
              z = mul(x, y);
         }
-        if(_symbol == symb('/')){
+     else   if(_symbol == symb('/')){
              z = div(x, y);
         }
         else{
@@ -54,4 +54,3 @@ contract Calculator {
         return z;
     }
 }
-
